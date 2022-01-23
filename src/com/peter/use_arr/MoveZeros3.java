@@ -25,9 +25,8 @@ class Solution_MoveZeros03 {
 
     //交换两个元素的值
     public static void swap(int[] nums, int i, int j) {
-        int temp = 0;
-        nums[i] = temp;
-        nums[j] = nums[i];
-        temp = nums[j];
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
 }
